@@ -2,6 +2,9 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./Mycontext.jsx";
 import {v1 as uuidv1} from "uuid";
+import logo from "./assets/blacklogo.png";
+
+
 
 function Sidebar() {
 const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply,setCurrThreadId,setPrevChats,  theme, setTheme, showSidebar, setShowSidebar} = useContext(MyContext);
@@ -70,7 +73,7 @@ const deleteThread = async (threadId) => {
         <section className={`sidebar ${showSidebar ? "show" : ""}`}>
             {/* new chat button */}
             <button onClick={createNewChat}>
-                <img src="src/assets/blacklogo.png" alt="gpt logo" className="logo"></img>
+                <img src={logo} alt="gpt logo" className="logo"></img>
                 <span><i className="fa-solid fa-pen-to-square"></i></span>
             </button>
 

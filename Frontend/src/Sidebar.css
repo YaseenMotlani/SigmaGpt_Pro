@@ -2,7 +2,7 @@
     /* background-color: #171717; */
     background-color: var(--bg-secondary);
     color: #b4b4b4;
-    height: 108vh;
+    height: 100vh;
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,18 @@ button:hover {
     margin: 10px;
     padding: 10px;
     height: 100%;
+    flex: 1;              /* takes remaining space */
+    overflow-y: auto;
+}
+
+/* Optional: hide scrollbar on desktop */
+.history::-webkit-scrollbar {
+    width: 6px;
+}
+
+.history::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 3px;
 }
 
 .history li {

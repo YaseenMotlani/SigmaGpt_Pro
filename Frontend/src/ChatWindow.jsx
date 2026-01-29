@@ -4,6 +4,7 @@ import { MyContext } from "./Mycontext.jsx";
 import { useContext, useState, useEffect } from "react";
 import {RingLoader} from "react-spinners";
 
+
 function ChatWindow() {
     const {prompt, setPrompt, reply, setReply, currThreadId, prevChats, setPrevChats, setNewChat, user, setShowSidebar } = useContext(MyContext);
     const [loading, setLoading] = useState(false);
