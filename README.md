@@ -3,55 +3,55 @@
 SigmaGPT Pro is a full-stack AI chat application inspired by ChatGPT.
 It allows users to communicate with an advanced Large Language Model (LLM) using a clean, modern interface.
 
-The application supports
--Secure authentication
--Persistent chat history
--Multiple conversation threads
--AI-powered responses
--Modern UI with dark/light mode
+### ✨The application supports<br/>
+-Secure authentication<br/>
+-Persistent chat history<br/>
+-Multiple conversation threads<br/>
+-AI-powered responses<br/>
+-Modern UI with dark/light mode<br/>
 
-This project is specially designed for:
--🔥 Placement preparation
--💼 Portfolio showcase
--🧠 Real-world MERN stack learning
--🤖 AI integration practice
+This project is specially designed for:<br/>
+-🔥 Placement preparation<br/>
+-💼 Portfolio showcase<br/>
+-🧠 Real-world MERN stack learning<br/>
+-🤖 AI integration practice<br/>
 
-✨ Key Features:
--🤖 AI chat powered by Groq LLaMA 3.3 (70B)
--🔐 Secure JWT Authentication (Signup / Login)
--🧵 Multiple chat threads (create, switch, delete)
--💾 Persistent chat history using MongoDB
--🌙 Dark / Light mode toggle
--📱 Responsive sidebar (mobile friendly)
--🧠 Context-based state management (React Context API)
--⚡ Fast REST APIs with Express.js
+✨ Key Features:<br/>
+-🤖 AI chat powered by Groq LLaMA 3.3 (70B)<br/>
+-🔐 Secure JWT Authentication (Signup / Login)<br/>
+-🧵 Multiple chat threads (create, switch, delete)<br/>
+-💾 Persistent chat history using MongoDB<br/>
+-🌙 Dark / Light mode toggle<br/>
+-📱 Responsive sidebar (mobile friendly)<br/>
+-🧠 Context-based state management (React Context API)<br/>
+-⚡ Fast REST APIs with Express.js<br/>
 
-🛠 Tech Stack
+🛠 Tech Stack<br/>
 
-Frontend:
--React (Vite)
--JavaScript (ES6+)
--CSS
--Context API
--Font Awesome Icons
+Frontend:<br/>
+-React (Vite)<br/>
+-JavaScript (ES6+)<br/>
+-CSS<br/>
+-Context API<br/>
+-Font Awesome Icons<br/>
 
-Backend:
--Node.js
--Express.js
--MongoDB
--Mongoose
--JWT Authentication
--bcryptjs
+Backend:<br/>
+-Node.js<br/>
+-Express.js<br/>
+-MongoDB<br/>
+-Mongoose<br/>
+-JWT Authentication<br/>
+-bcryptjs<br/>
 
-AI Integration:
--Groq API
--Model: llama-3.3-70b-versatile
+AI Integration:<br/>
+-Groq API<br/>
+-Model: llama-3.3-70b-versatile<br/>
 
-📂 Project Structure:
+📂 Project Structure:<br/>
 
-SigmaGpt_Pro
+SigmaGpt_Pro<br/>
 │
-├── Frontend
+├── Frontend<br/>
 │   ├── src
 │   │   ├── components
 │   │   │   ├── Sidebar.jsx
@@ -64,7 +64,7 @@ SigmaGpt_Pro
 │   │   └── main.jsx
 │   └── index.html
 │
-├── Backend
+├── Backend<br/>
 │   ├── models
 │   │   ├── User.js
 │   │   └── Threads.js
@@ -81,62 +81,62 @@ SigmaGpt_Pro
 ├── README.md
 └── LICENSE
 
-🔐 Authentication Flow:
--User registers or logs in
--JWT token is generated on backend
--Token is stored in localStorage
--Protected APIs are accessed using Authorization: Bearer <token>
+🔐 Authentication Flow:<br/>
+-User registers or logs in<br/>
+-JWT token is generated on backend<br/>
+-Token is stored in localStorage<br/>
+-Protected APIs are accessed using Authorization: Bearer <token><br/>
 
-⚙️ Environment Variables:
-Create a .env file inside Backend:
--GROQ_API_KEY=your_groq_api_key
--MONGODB_URL=your_mongodb_connection_string
--JWT_SECRET=your_jwt_secret
+⚙️ Environment Variables:<br/>
+Create a .env file inside Backend:<br/>
+-GROQ_API_KEY=your_groq_api_key<br/>
+-MONGODB_URL=your_mongodb_connection_string<br/>
+-JWT_SECRET=your_jwt_secret<br/>
 
-🚀 Installation & Setup:
--Node.js installed
--MongoDB running (Atlas or local)
--npm or yarn
+🚀 Installation & Setup:<br/>
+-Node.js installed<br/>
+-MongoDB running (Atlas or local)<br/>
+-npm or yarn<br/>
 
-1)1️Clone Repository:
--git clone https://github.com/YaseenMotlani/SigmaGpt_Pro.git
--cd SigmaGpt_Pro
+1)Clone Repository:<br/>
+-git clone https://github.com/YaseenMotlani/SigmaGpt_Pro.git<br/>
+-cd SigmaGpt_Pro<br/>
 
-2) Backend Setup:
--cd Backend
--npm install
--npm start
-Backend will run on:
--http://localhost:8080
+2) Backend Setup:<br/>
+-cd Backend<br/>
+-npm install<br/>
+-npm start<br/>
+Backend will run on:<br/>
+-http://localhost:8080<br/>
 
-3)Frontend Setup
--cd Frontend
--npm install
--npm run dev
-Frontend runs on:
-http://localhost:5173
+3)Frontend Setup<br/>
+-cd Frontend<br/>
+-npm install<br/>
+-npm run dev<br/>
+Frontend runs on:<br/>
+http://localhost:5173<br/>
 
-🧠 How AI Chat Works:
--User sends a message
--Message is stored in MongoDB
--Message is sent to Groq AI
--AI reply is received
--Assistant reply is stored & returned to frontend
+🧠 How AI Chat Works:<br/>
+-User sends a message<br/>
+-Message is stored in MongoDB<br/>
+-Message is sent to Groq AI<br/>
+-AI reply is received<br/>
+-Assistant reply is stored & returned to frontend<br/>
 
-🔮 Future Enhancements:
--🔄 Real-time streaming responses
--🌐 Deployment (Vercel + Render)
--📂 Chat export (PDF / TXT)
--🧑 User profile management
--🧠 Conversation summarization
+🔮 Future Enhancements:<br/>
+-🔄 Real-time streaming responses<br/>
+-🌐 Deployment (Vercel + Render)<br/>
+-📂 Chat export (PDF / TXT)<br/>
+-🧑 User profile management<br/>
+-🧠 Conversation summarization<br/>
 
-📄 License
--Licensed under the MIT License.
+📄 License<br/>
+-Licensed under the MIT License.<br/>
 
-👤 Author
--Yaseen Motlani
---GitHub: https://github.com/YaseenMotlani
---Live Demo: https://sigmagpt-frontend-6tzj.onrender.com
+👤 Author<br/>
+-Yaseen Motlani<br/>
+--GitHub: https://github.com/YaseenMotlani<br/>
+--Live Demo: https://sigmagpt-frontend-6tzj.onrender.com<br/>
 
 
 -
