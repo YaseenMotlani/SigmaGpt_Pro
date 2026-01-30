@@ -116,6 +116,44 @@ Backend will run on:<br/>
 Frontend runs on:<br/>
 http://localhost:5173<br/>
 
+## 📸 Usage Screenshots
+
+<p align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./screenshots/1-login.png" width="350"/><br/>
+      <b>Login Page</b>
+    </td>
+    <td align="center">
+      <img src="./screenshots/2-signup.png" width="350"/><br/>
+      <b>Signup Page</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./screenshots/3-window.png" width="350"/><br/>
+      <b>Chat Threads</b>
+    </td>
+    <td align="center">
+      <img src="./screenshots/4-windowchat.png" width="350"/><br/>
+      <b>Dark Mode</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" colspan="2">
+      <img src="./screenshots/5-logout.png" width="500"/><br/>
+      <b>AI Response Generation</b>
+    </td>
+  </tr>
+</table>
+
+</p>
+
+
 🧠 How AI Chat Works:<br/>
 -User sends a message<br/>
 -Message is stored in MongoDB<br/>
