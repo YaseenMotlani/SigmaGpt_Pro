@@ -30,7 +30,7 @@ function ChatWindow() {
         };
 
         try{
-            const response = await fetch("http://localhost:8080/api/chat", options);
+            const response = await fetch("https://sigmagpt-backend-z8s9.onrender.com/api/chat", options);
 
             if (response.status === 401) {
                 alert("Session expired. Please login again.");

@@ -8,10 +8,16 @@ import logo from "./assets/blacklogo.png";
 
 function Sidebar() {
 const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply,setCurrThreadId,setPrevChats,  theme, setTheme, showSidebar, setShowSidebar} = useContext(MyContext);
+const token = localStorage.getItem("token");
+
 
 const getAllThreads = async () => {
     try {
-        const response = await fetch("http://localhost:8080/api/thread");
+        const response = await fetch("https://sigmagpt-backend-z8s9.onrender.com/api/thread", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
         const res = await response.json();
         // threadId, title
         const filteredData = res.map(thread => ({threadId: thread.threadId, title: thread.title}));
@@ -39,7 +45,11 @@ const changeThread = async (newThreadId) => {
     setShowSidebar(false); // ✅ important
 
     try{
-        const response = await fetch(`http://localhost:8080/api/thread/${newThreadId}`);
+        const response = await fetch(`https://sigmagpt-backend-z8s9.onrender.com/api/thread/${newThreadId}`, {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
         const res = await response.json();
         console.log(res);
         setPrevChats(res);
@@ -52,7 +62,16 @@ const changeThread = async (newThreadId) => {
 
 const deleteThread = async (threadId) => {
     try{
-        const response = await fetch(`http://localhost:8080/api/thread/${threadId}`, {method: "DELETE"});
+        const response = await fetch(
+            `https://sigmagpt-backend-z8s9.onrender.com/api/thread/${threadId}`,
+            {
+                method: "DELETE",
+                headers: {
+                Authorization: `Bearer ${token}`
+                }
+            }
+        );
+
         const res = await response.json();
         console.log(res);
 

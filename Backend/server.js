@@ -7,11 +7,20 @@ import authRoutes from "./routes/auth.js";
 import { protect } from "./middleware/auth.js";
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
 
 // This both line helps to Fronted connect to Backend
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://sigmagpt-frontend-6tzj.onrender.com"
+    ],
+    credentials: true
+  })
+);
+
 
 app.use("/api/auth", authRoutes);
 app.use("/api", testRoutes);
